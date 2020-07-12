@@ -5,10 +5,6 @@ import { connect } from 'react-redux';
 
 
 const Products = (props) => {
-  console.log('productttttttttts', props.storefront.products);
-  console.log('props.activeCategoooooooory', props.storefront.activeCategory);
-
-
   return (
     <>
       <h3>Products</h3>
@@ -23,8 +19,6 @@ const Products = (props) => {
                 <p >Product Category : {product.category}</p>
                 <p >In Stock : {product.inStock}</p>
                 <p >Price : {product.price}</p>
-
-
               </div>
             );
           })}
