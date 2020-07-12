@@ -6,7 +6,7 @@
 
 ### Links and Resources
 
-- [submission PR](https://github.com/401-advanced-javascript-Anolla/resty/pull/1)
+- [submission PR](https://github.com/401-advanced-javascript-Anolla/storefront/pull/1)
 - [ci/cd](http://xyz.com) (GitHub Actions)
 <!-- - [back-end server url](http://xyz.com) (when applicable) -->
 <!-- - [front-end application](http://xyz.com) (when applicable)  -->
