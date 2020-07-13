@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { categoryAction } from '../../store/storefront';
+import { categoryAction } from '../../store/categories';
 
 const Categories  = (props) => {
   return (
