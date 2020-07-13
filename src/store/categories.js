@@ -1,3 +1,6 @@
+
+//Categories Reducer
+
 const initialState = {
   categories: [
     { name: 'electronics', displayName: 'Elecronics' },
@@ -27,9 +30,9 @@ export default (state = initialState, action) => {
   const { type, payload } = action;
   switch (type) {
   case 'CATEGORY':
-    const activeCategory = payload;    
+    // console.log(payload,'paaayllllooooaaaaad');
+    const activeCategory = payload; 
     return { ...state, activeCategory };
-
   default:
     return state;
   }
