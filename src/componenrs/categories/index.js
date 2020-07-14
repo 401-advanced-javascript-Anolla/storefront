@@ -6,21 +6,21 @@ const Categories  = (props) => {
   return (
     <section>
       <ul>
-        {props.storefront.categories.map((category) => {
+        {props.categories.categories.map((category) => {
           return (
             <li key={category.name} onClick={() => props.categoryAction(category.name)}>
-              {category.name}
+              {category.displayName}
             </li>
           );
         })}
       </ul>
-      {/* <button onClick={props.reset}>Reset</button> */}
     </section>
   );
 };
 
 const mapStateToProps = (state) => {
-  return { storefront: state.storefront };
+  return { categories: state.categories,
+    products: state.products };
 };
 
 const mapDispatchToProps = { categoryAction };
