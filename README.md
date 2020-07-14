@@ -1,4 +1,4 @@
-# LAB - Class 37
+# LAB - Class 38
 
 ## Project: storefront
 
@@ -6,7 +6,7 @@
 
 ### Links and Resources
 
-- [submission PR](https://github.com/401-advanced-javascript-Anolla/storefront/pull/2)
+- [submission PR](https://github.com/401-advanced-javascript-Anolla/storefront/pull/3)
 - [ci/cd](https://github.com/401-advanced-javascript-Anolla/storefront/pull/1#partial-pull-merging) (GitHub Actions)
 <!-- - [back-end server url](http://xyz.com) (when applicable) -->
 <!-- - [front-end application](http://xyz.com) (when applicable)  -->
