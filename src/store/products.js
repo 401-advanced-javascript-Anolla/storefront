@@ -19,11 +19,20 @@ const initialState = [
 ];
   
 export default (state = initialState, action) => {
-  const { type } = action;
+  const { type, payload } = action;
   switch (type) {
   case 'CATEGORY':
     // console.log(state,'ssttaaattee');
     return [...state];
+
+  case 'INSTOCK':
+    return state.map(product=>{
+      if(product.name === payload){
+        return {...product, inStock:product.inStock-1};
+      }else{
+        return product;
+      }
+    });
   default:
     return state;
   }
@@ -34,5 +43,12 @@ export const categoryAction = (category) => {
   return {
     type: 'CATEGORY',
     payload: category,
+  };
+};
+
+export const inStockAction = (productName) => {
+  return {
+    type: 'INSTOCK',
+    payload: productName,
   };
 };

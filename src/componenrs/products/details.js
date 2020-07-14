@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { cartAction } from '../../store/cart';
+import { inStockAction } from '../..//store/products';
 
 
 const Products = (props) => {
@@ -19,7 +20,7 @@ const Products = (props) => {
                   <p >In Stock : {product.inStock}</p>
                   <p >Price : {product.price}</p>
                 </div>
-                <button onClick={() => props.cartAction(product)} >Add to Cart</button> 
+                <button onClick={() => {props.cartAction(product); props.inStockAction(product.name);}} >Add to Cart</button> 
                 <button>View Details</button>
               </>
             );
@@ -36,6 +37,6 @@ const mapStateToProps = (state) => {
     cart:state.cart };
 };
 
-const mapDispatchToProps = { cartAction };
+const mapDispatchToProps = { cartAction,inStockAction };
 
 export default connect(mapStateToProps,mapDispatchToProps)(Products);
